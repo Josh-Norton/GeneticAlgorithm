@@ -1,0 +1,41 @@
+<!-- some stuff -->
+<!DOCTYPE html>
+<head>
+	<title>Genetic Algorithm</title>
+	<link href="GeneticAlgorithm.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Genetic Algorithm</h1>
+	<ul>
+		<li>
+			<p>Character List:</p>
+			<input type=text id=charList value="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 " />
+		</li>
+		<li>
+			<p>Goal:</p>
+			<input type=text id=goalInput value="Hello world" />
+		</li>
+		<li>
+			<p>Data Size:</p>
+			<input type=number id=dataSize value=1000 />
+		</li>
+		<li>
+			<p>Mutation:</p>
+			<input type=number id=mutation value=0.01 />
+		</li>
+	</ul>
+	<br>
+	<br>
+	<button onclick="start()">Start</button>
+	
+	<h2>Goal:</h2>
+	<h2 id="goal"></h2>
+	<h2>Best:</h2>
+	<h2 id="bestWord"></h2>
+	<h2>Generation:</h2>
+	<h2 id="generation"></h2>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="GeneticAlgorithm.js"></script>
+</body>
